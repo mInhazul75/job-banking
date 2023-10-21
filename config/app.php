@@ -207,11 +207,10 @@ return [
     | the aliases are "lazy" loaded so they don't hinder performance.
     |
     */
+    'aliases' => [
+            'Helper' => App\Helpers\Helper::class,
+    ],
 
-    'aliases' => Facade::defaultAliases()->merge([
 
-        'Helper' => App\Helpers\Helper::class,
-        // 'ExampleClass' => App\Example\ExampleClass::class,
-    ])->toArray(),
 
 ];
